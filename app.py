@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from personalities_scrape import *
+from predict import *
 
 app = Flask(__name__)
 
