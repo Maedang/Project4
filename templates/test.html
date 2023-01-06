@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+      <title>Personality Test</title>
+        <link rel="stylesheet" href="../static/style/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+  </head>
+  <!-- Start of Container 1 -->
+  <body>
+    <div class="container1">
+      <!-- Start of Nav Bar -->
+      <div class="nav-bar">
+        <span><h1>January 2023 - Project 4</h1></span>
+          <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">What is the Myers Briggs Personality Test?</a></li>
+            <li><a href="{{ url_for('test') }}">Take the test!</a></li>
+          </ul>
+      </div>
+      <div class="container5">
+        <p>Using only your Twitter user name, the algorithm we've created will pull your most recent tweets, analyze them and assign a Myers-Briggs personality most fitting to you.</p>
+      </div>
+   <!-- Start of Container 3 -->
+    <div class="container3">
+      <canvas id="canvas2"></canvas>
+          <script src="../static/js/script2.js"></script>
+    <div class="container4">
+      <form action="{{url_for('prediction')}}"  method="POST">
+        <div id="search">
+          <input type="text" id="input" name="username" placeholder="Username...">
+            <button id="button"><i class="fa fa-search"></i></button>
+            <div class="spinner"><i class="fa fa-spinner"></i></div>
+
+        </div>
+        <div class="note">Enter your Twitter user name</div>
+      </form>
+      <script  src="../static/js/script3.js"></script>
+    </div>
+  </body>
+</html>
+
+        
