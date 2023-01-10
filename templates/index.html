@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+      <title>Personality Test</title>
+        <link rel="stylesheet" href="../static/style/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <!-- Start of Container 1 -->
+  <body>
+    <div class="container1">
+      <!-- Start of Nav Bar -->
+      <div class="nav-bar">
+        <span><h1>January 2023 - Project 4</h1></span>
+          <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">What is the Myers Briggs Personality Test?</a></li>
+            <li><a href="{{ url_for('test') }}">Take the test!</a></li>
+          </ul>
+      </div>
+    <!-- Start of Container 2 -->  
+    <div class="container2">
+    <div class="description-content">
+      <img src="../static/images/omgfinal.jpg" alt="personality" class="description-image">
+        <div class="centerize">
+          <div class="btn-2">
+              <a href="{{ url_for('test') }}"><span>Click here to take the test and find out!</span></a>
+            </form>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   <!-- Start of Container 3 --> 
+  <div class="container3">
+  <!-- partial:index.partial.html -->
+  <canvas id="canvas"></canvas>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script><script  src="../static/js/script.js"></script>
+  </body>
+</html>
