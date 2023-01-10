@@ -35,3 +35,5 @@ We also wanted to do some visualizations about our dataset to see things such as
 ## Website
 
 We created a website using HTML for people to be able for people to type in their Twitter handles and have our model predict their personality types. Once it predicts it will give you a small description of the predicted personality type and a link to a website just in case you want to find out more about your personality type.
+
+![Screen Shot 2023-01-09 at 10 02 52 PM](https://user-images.githubusercontent.com/105513598/211459366-40f16463-b12a-43ee-bef2-882802765de6.png)
